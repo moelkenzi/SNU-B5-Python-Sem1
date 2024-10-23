@@ -1,0 +1,180 @@
+Global styles
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3a4764; /* Dark blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Calculator container */
+.calculator {
+    background-color: #3a4764; /* Same as body background */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Theme switcher styles */
+.theme-switcher {
+    display: flex;
+    align-items: flex-end;
+}
+
+.theme-text {
+    color: white;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.theme-numbers {
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    margin-right: 5px;
+}
+
+.theme-toggle {
+    width: 50px;
+    height: 20px;
+    background-color: #232c43; /* Darker blue for toggle background */
+    border-radius: 10px;
+    position: relative;
+}
+
+.theme-toggle::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #d03f2f; /* Red color for the toggle */
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+}
+
+/* Display styles */
+.display {
+    background-color: #182034; /* Very dark blue for display */
+    color: white;
+    font-size: 36px;
+    text-align: right;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Button grid styles */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    background-color: #232c43; /* Darker blue for keypad background */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Button styles */
+.btn {
+    background-color: #eae3dc; /* Light grayish orange for number buttons */
+    border: none;
+    border-radius: 5px;
+    color: #444b5a; /* Grayish blue for button text */
+    font-size: 24px;
+    padding: 10px 0;
+    cursor: pointer;
+    box-shadow: 0 3px 0 #b4a597; /* Shadow for 3D effect */
+}
+
+.btn.function {
+    background-color: #637097; /* Desaturated dark blue for function buttons */
+    color: white;
+    box-shadow: 0 3px 0 #404e72;
+}
+
+.btn.equals {
+    background-color: #d03f2f; /* Red color for equals button */
+    color: white;
+    box-shadow: 0 3px 0 #93261a;
+}
+
+.btn.reset {
+    grid-column: span 2;
+}
+
+.btn.equals {
+    grid-column: span 2;
+}
+
+/* Theme-specific styles */
+.calculator[data-theme="theme-1"] {
+    background-color: #17062a;
+}
+
+.calculator[data-theme="theme-2"] {
+    background-color: #3a4764;
+}
+
+.calculator[data-theme="theme-3"] {
+    background-color: #e6e6e6;
+}
+
+/* Theme 1 styles (Purple theme) */
+.calculator[data-theme="theme-1"] .logo,
+.calculator[data-theme="theme-1"] .theme-text,
+.calculator[data-theme="theme-1"] .theme-numbers {
+    color: #ffe53d;
+}
+
+.calculator[data-theme="theme-1"] .theme-toggle {
+    background-color: #1e0936;
+}
+
+.calculator[data-theme="theme-1"] .theme-toggle::after {
+    background-color: #00e0d1;
+}
+
+.calculator[data-theme="theme-1"] .display {
+    background-color: #1e0936;
+    color: #ffe53d;
+}
+
+.calculator[data-theme="theme-1"] .button-grid {
+    background-color: #1e0936;
+}
+
+.calculator[data-theme="theme-1"] .btn {
+    background-color: #331c4d;
+    color: #ffe53d;
+    box-shadow: 0 3px 0 #881c9e;
+}
+
+.calculator[data-theme="theme-1"] .btn.function {
+    background-color: #56077c;
+    color: white;
+    box-shadow: 0 3px 0 #be15f4;
+}
+
+.calculator[data-theme="theme-1"] .btn.equals {
+    background-color: #00e0d1;
+    color: #1a2327;
+    box-shadow: 0 3px 0 #6cf9f2;
+}

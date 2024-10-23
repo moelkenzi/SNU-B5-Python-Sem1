@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <!--? Home -->
+    <sectionn class="home">
+        <div class="form_container">
+            <!--? Login Form -->
+            <div class="form login_form">
+                <form action="#">
+                    <h2>Login</h2>
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email"required>
+                        <i class="uil uil-envlope-alt"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Enter your password"required>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+
+                    <div class="option_field">
+                        <span class="checkbox">
+                            <input type="checkbox">
+                            <label for="check">Remember me</label>
+                        </span>
+                    <a href="#" class="forgot_pw">Forgot password</a>
+                    </div>
+
+                    <button class="button" id="form-open">Login Now</button>
+                    <div class="login_signup">
+                        Don't have an account?
+                        <a href="#" id="signup">Singn up</a>
+                    </div>
+                </form>
+            </div>
+            <br>
+
+            
+             <!--? Signup Form -->
+             <div class="form signup_form" style="display: none;">
+                <form action="#">
+                    <h2>Sign Up</h2>
+                    <div class="input_box">
+                        <input type="text" placeholder="Enter your Name" required>
+                    </div>
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required>
+                        <i class="uil uil-envlope-alt"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Create your password" required>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Confirm your password" required>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+
+                    <button class="button">Sign Up Now</button>
+                    <div class="login_signup">
+                        Already have an account?
+                        <a href="#" id="login">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+   
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+

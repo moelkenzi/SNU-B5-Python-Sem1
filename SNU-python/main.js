@@ -1,0 +1,1 @@
+const students = ['mohammed', 24]
